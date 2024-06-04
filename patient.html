@@ -1,0 +1,425 @@
+<html>
+    <head>
+        <title>Patient</title>
+    </head>
+    <style>
+        .container1{
+            width: 1000px;
+        }
+        .chart-wrap{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pie-chart{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: darkgrey;
+            background:conic-gradient(
+                from 180deg,
+                #FF0000 0,
+                #FF0000 calc(10%),
+                #0000FF calc(10%),
+                #0000FF calc(10% + 10%),
+                #00FFFF calc(10%+10%),
+                #00FFFF calc(10%+10%+12%),
+                blueviolet calc (10%+10%+12%)
+                blueviolet calc (10%+10%+12%+13%)
+            )
+
+        }
+        .chart-info h2{
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+        .chart-info ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .chart-info ul li{
+            margin-bottom: 10px;
+            font-size: 30px;
+            text-align: right;
+        }
+        .chart-info ul li span{
+            width: 30px;
+            height: 20px;
+            border-radius: 5px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+      .banner
+      {
+      background-color: red;
+      color: white;
+      margin-top: 75px;
+      text-align:center;
+      padding: 100px 0;
+      }
+      
+      #blood{
+      height: 100px;
+      width: 100px;
+      }
+      table,td,tr{
+      text-align:center;
+      }
+</style>
+<body>
+    <div class="container1">
+        <div class="chart-wrap">
+            <figure class="pie-chart"></figure>
+            <div class="chart-info">
+                <h2>Blood Chart</h2>
+                <ul>
+                    <li>A+:10% <span style="background-color: hotpink;"></span></li>
+                    <li>A-:10% <span style="background-color: chocolate;"></span></li>
+                    <li>B+:12% <span style="background-color: aqua;"></span></li>
+                    <li>B-:13% <span style="background-color: blueviolet;"></span></li>
+                    <li>AB+:20% <span style="background-color: cadetblue;"></span></li>
+                    <li>AB-:9% <span style="background-color: darkgreen;"></span></li>
+                    <li>O+:14% <span style="background-color: darkslategrey;"></span></li>
+                    <li>O-:12% <span style="background-color: lightskyblue;"></span></li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+<div class="banner" >
+    <h1> 
+    Blood Donar Information</h1>
+    <img id="blood" src="don.png">
+    <p> If you are searching for blood,you can use this page.</p>
+    <button>
+    <p><a href="#information:">All the blood donor's information:</a></p>
+    <p><a href="#op">O+</a></p>
+    <p><a href="#on">O-</a></p>
+    <p><a href="#ap:">A+</a></p>
+    <p><a href="#an">A-</a></p>
+    <p><a href="#bp">B+</a></p>
+    <p><a href="#bn">B-</a></p>
+    </button>
+    </div>
+
+<div>
+<h1 style="color:red;margin-left:35%;">DONOR'S LIST</h1>
+</div>
+<p>Below here, users can search for potential donors in their locality. We are here for you 24/7.
+    Take care. <br>
+    <span style="color:red;"> <b> DONATE BLOOD AND SAVE LIVES </b></span>
+</p>
+<input placeholder="Search for location . . .">
+
+<table id= "information" style="width:80%" border= "1" #information: align: center>
+<tr>
+<th style="width:26%;">Address</th>
+<th style="width:22%;">Blood Group</th>
+<th style="width:25%;">Name of Donor</th>
+<th style="width: 40%;">Age</th>
+<th style="width:100%;">Last Time donate</th>
+<th style="width:100%;">Contact</th>
+</tr>
+
+<tr id="op">
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Nusrat Jahan</td>
+<td>22</td>
+<td>Never</td>
+<td>7800766333</td>
+</tr>
+<tr id="on">
+<td>Chittagong</td>
+<td>O -ve</td>
+<td>Farhan Hossain</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7006574387</td>
+</tr>
+<tr>
+<td>Comilla</td>
+<td>B +ve</td>
+<td>Nahid Hasan</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7844234450</td>
+</tr>
+<tr>
+<td>Rajshahi</td>
+<td>Ab +ve</td>
+<td>Nazmun Nahar</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9364728111</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>O +ve</td>
+<td>Mrs. Alexa</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9752637890</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>O +ve</td>
+<td>Abrar Mahir</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9541566272</td>
+</tr>
+<tr>
+<td>Khulna</td>
+<td>O +ve</td>
+<td>Abdur Rahim</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>95436700001</td>
+</tr>
+<tr>
+<td>Barishal</td>
+<td>O +ve</td>
+<td>Kabir Singh</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>954227611</td>
+</tr>
+<tr>
+<td>Maymenshing</td>
+<td>A +ve</td>
+<td>Abdur Jobbar</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9541829901</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Peter Parker</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>966533782</td>
+</tr>
+<tr>
+<td>Comilla</td>
+<td>O +ve</td>
+<td>John Wick</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>5669829901</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>B -ve</td>
+<td>Salman Khan</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9533778820</td>
+</tr>
+<tr>
+<td>Barishal</td>
+<td>O +ve</td>
+<td>Akshay Kumar</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9541899901</td>
+</tr>
+<tr>
+<td>Chittagong</td>
+<td>O -ve</td>
+<td>Casemiro</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7899829403</td>
+</tr>
+<tr>
+<td>Comilla</td>
+<td>O +ve</td>
+<td>Vinicius Junior</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>952283911</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>O -ve</td>
+<td>Cristiano Ronaldo</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>954001829</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Lionel Messi</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9980229901</td>
+</tr>
+<tr>
+<td>Khulna</td>
+<td>B +ve</td>
+<td>Neymar Jr.</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9532887112</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>O +ve</td>
+<td>Alisson</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9541829901</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>B +ve</td>
+<td>Karim Benzema</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>799820901</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Andres Iniesta</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7600123343</td>
+</tr>
+<tr>
+<td>Khulna</td>
+<td>B -ve</td>
+<td>Dani Alves</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9541786441</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>B -ve</td>
+<td>Pelé</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7889662455</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>O +ve</td>
+<td>Ederson</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>8899677623</td>
+</tr>
+<tr>
+<td>Khulna</td>
+<td>O +ve</td>
+<td>Andrew Alisson</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9906167889</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Captain America</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7890556260</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>AB -ve</td>
+<td>Iron Man</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7006367880</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O -ve</td>
+<td>Ant Man</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>8907524378</td>
+</tr>
+<tr>
+<td>Rajshahi</td>
+<td>O +ve</td>
+<td>Doctor Strange</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7078643312</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>O +ve</td>
+<td>Thor</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>8800754779</td>
+</tr>
+<tr>
+<td>Rajshahi</td>
+<td>AB +ve</td>
+<td>Khushi</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7071244851</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>DeadPool</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9899221918</td>
+</tr>
+<tr>
+<td>Rajshahi</td>
+<td>O +ve</td>
+<td>Tom Horan</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7072885656</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>O -ve</td>
+<td>Ed Smith</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7071808606</td>
+</tr>
+<tr>
+<td>Khulna</td>
+<td>A -ve</td>
+<td>Taijul Islam</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>6009227889</td>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>O +ve</td>
+<td>Virat Kohli</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>9889673421</td>
+</tr>
+<tr>
+<td>Rangpur</td>
+<td>A +ve</td>
+<td>Mehidy Hasan Miraz</td>
+<td>29</td>
+<td>13/03/2024</td>
+<td>7909554389</td>
+</tr>
+
+</table>
+</body>
+</html>
